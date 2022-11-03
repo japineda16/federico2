@@ -4,9 +4,9 @@ namespace Books
 {
     class Documento {
         // Setteando parametros
-        public string autor = "";
-        public string titulo = "";
-        public string localizacion = "";
+        protected string autor = "";
+        protected string titulo = "";
+        protected string localizacion = "";
         // Definiendo parametros
         public string Autor
         {
