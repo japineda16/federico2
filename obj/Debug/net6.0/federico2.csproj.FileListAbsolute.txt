@@ -1,0 +1,15 @@
+/Users/japineda/projects/federico2/bin/Debug/net6.0/federico2
+/Users/japineda/projects/federico2/bin/Debug/net6.0/federico2.deps.json
+/Users/japineda/projects/federico2/bin/Debug/net6.0/federico2.runtimeconfig.json
+/Users/japineda/projects/federico2/bin/Debug/net6.0/federico2.dll
+/Users/japineda/projects/federico2/bin/Debug/net6.0/federico2.pdb
+/Users/japineda/projects/federico2/obj/Debug/net6.0/federico2.csproj.AssemblyReference.cache
+/Users/japineda/projects/federico2/obj/Debug/net6.0/federico2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/japineda/projects/federico2/obj/Debug/net6.0/federico2.AssemblyInfoInputs.cache
+/Users/japineda/projects/federico2/obj/Debug/net6.0/federico2.AssemblyInfo.cs
+/Users/japineda/projects/federico2/obj/Debug/net6.0/federico2.csproj.CoreCompileInputs.cache
+/Users/japineda/projects/federico2/obj/Debug/net6.0/federico2.dll
+/Users/japineda/projects/federico2/obj/Debug/net6.0/refint/federico2.dll
+/Users/japineda/projects/federico2/obj/Debug/net6.0/federico2.pdb
+/Users/japineda/projects/federico2/obj/Debug/net6.0/federico2.genruntimeconfig.cache
+/Users/japineda/projects/federico2/obj/Debug/net6.0/ref/federico2.dll
