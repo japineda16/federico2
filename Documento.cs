@@ -4,6 +4,7 @@ namespace Books
 {
     class Documento {
         // Setteando parametros
+        // Los campos ahora son protegidos
         protected string autor = "";
         protected string titulo = "";
         protected string localizacion = "";
