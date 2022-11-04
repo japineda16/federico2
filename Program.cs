@@ -5,6 +5,7 @@ namespace Books
     class Program {
         public static void Main(string[] args) 
         {
+            /*
             // se inicializa la clase y se le pasan los parametros de la clase Libro
             Libros l1 = new Libros("Jose", "<Titulo del libro>", "Venezuela");
             // Se definen las propiedades de la clase libro.
@@ -13,6 +14,14 @@ namespace Books
             l1.Titulo = "<Titulo del libro>";
             // se invoca la funcion mostrar de la case usando el objeto l1.
             l1.Mostrar();
+            */ 
+            // Se invocan las clases nuevamente.
+            Libros l2 = new Libros("Federico", "Doña barbara", "Apure");
+            l2.Autor = "Federico";
+            l2.Localizacion = "Apure";
+            l2.Titulo = "Doña barbara";
+            l2.Mostrar();
+            Documento d1 = new Documento();
         }
    }
 }
