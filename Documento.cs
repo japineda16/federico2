@@ -41,5 +41,10 @@ namespace Books
         public void Mostrar() {
             Console.WriteLine("El autor es " + autor + ", lo escribió en " + localizacion + " y el titulo de la obra es " + titulo);
         }
+
+        // Funcion ToString, devuelve un string con la informacion del documento
+        public void ToString() {
+            Console.WriteLine(autor + " - " + localizacion + " - " + titulo);
+        }
    }
 }

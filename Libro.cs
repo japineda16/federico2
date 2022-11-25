@@ -43,6 +43,11 @@ namespace Books
             Console.WriteLine("El autor es " + autor + ", lo escribió en " + localizacion + " y el titulo de la obra es " + titulo);
         }
 
+        // Funcion ToString, devuelve un string con la informacion del libro
+        public void ToString() {
+            Console.WriteLine(autor + " - " + localizacion + " - " + titulo);
+        }
+
         // Migrada todas las instrucciones a la clase documento
         // Ahora la clase libro heredara todas las funcionalidades de la clase
         // documento
