@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "zEaIE9noI18enyvq/Jfzw2t8NK2SPufctxnDDAjaREUDUhcRpnYuRmnwg0KFb0NsSdC2vY9GjBcWl3epF5TVvQ==",
+  "dgSpecHash": "bMQkISPXkqKMEk0a+o45bu/rozi8FqO82bo2aH4P199nIpg1ECEnawHWrIeLSQ+EDaVZf2VIzq4pv6AlVQLFEA==",
   "success": true,
   "projectFilePath": "/Users/japineda/projects/federico2/federico2.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/japineda/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "/Users/japineda/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "/Users/japineda/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.11/microsoft.netcore.app.host.osx-x64.6.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
