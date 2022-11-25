@@ -5,6 +5,7 @@ namespace Books
     class Program {
         public static void Main(string[] args) 
         {
+            // Seleccion multiple si el usuario desea agregar libros o bien articulos.
             Console.WriteLine("Seleccione 1 si desea agregar un libro, 2 si desea agregar un articulo");
             string opcion = Console.ReadLine();
             if (opcion == "1")
