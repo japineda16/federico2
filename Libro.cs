@@ -9,6 +9,7 @@ namespace Books
         protected string autor = "";
         protected string titulo = "";
         protected string localizacion = "";
+        protected string paginas = "";
         // Definiendo parametros
         public string Autor
         {
@@ -17,6 +18,15 @@ namespace Books
             }
             set {
                 autor = value;
+            }
+        }
+        public string Paginas
+        {
+            get {
+                return paginas;
+            }
+            set {
+                paginas = value;
             }
         }
         public string Titulo
@@ -45,7 +55,7 @@ namespace Books
 
         // Funcion ToString, devuelve un string con la informacion del libro
         public void ToString() {
-            Console.WriteLine(autor + " - " + localizacion + " - " + titulo);
+            Console.WriteLine(autor + " - " + localizacion + " - " + titulo + " - " + paginas);
         }
 
         // Migrada todas las instrucciones a la clase documento
