@@ -2,7 +2,47 @@ using System;
 
 namespace Books
 {
-    class Libros: Documento {
+    class Libros {
+
+        // Setteando parametros
+        // Los campos ahora son protegidos
+        protected string autor = "";
+        protected string titulo = "";
+        protected string localizacion = "";
+        // Definiendo parametros
+        public string Autor
+        {
+            get {
+                return autor;
+            }
+            set {
+                autor = value;
+            }
+        }
+        public string Titulo
+        {
+            get {
+                return titulo;
+            }
+            set {
+                titulo = value;
+            }
+        }
+        public string Localizacion
+        {
+            get {
+                return localizacion;
+            }
+            set {
+                localizacion = value;
+            }
+        }
+        // Definicion de funciones
+        // Funcion mostrar, devuelve el autor, localizacion y titulo del libro
+        public void Mostrar() {
+            Console.WriteLine("El autor es " + autor + ", lo escribió en " + localizacion + " y el titulo de la obra es " + titulo);
+        }
+
         // Migrada todas las instrucciones a la clase documento
         // Ahora la clase libro heredara todas las funcionalidades de la clase
         // documento

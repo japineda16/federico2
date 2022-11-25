@@ -37,6 +37,7 @@ namespace Books
             }
         }
         // Definicion de funciones
+        // Funcion mostrar, devuelve el autor, localizacion y titulo del documento
         public void Mostrar() {
             Console.WriteLine("El autor es " + autor + ", lo escribió en " + localizacion + " y el titulo de la obra es " + titulo);
         }
