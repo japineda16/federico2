@@ -2,7 +2,7 @@ using System;
 
 namespace Books
 {
-    class Libros {
+    class Libros: Documento {
 
         // Setteando parametros
         // Los campos ahora son protegidos
@@ -51,11 +51,6 @@ namespace Books
         // Funcion mostrar, devuelve el autor, localizacion y titulo del libro
         public void Mostrar() {
             Console.WriteLine("El autor es " + autor + ", lo escribió en " + localizacion + " y el titulo de la obra es " + titulo);
-        }
-
-        // Funcion ToString, devuelve un string con la informacion del libro
-        public void ToString() {
-            Console.WriteLine(autor + " - " + localizacion + " - " + titulo + " - " + paginas);
         }
 
         // Migrada todas las instrucciones a la clase documento

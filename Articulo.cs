@@ -2,7 +2,7 @@ using System;
 
 namespace Books
 {
-    class Articulo {
+    class Articulo: Documento {
         // Setteando parametros
         // Los campos ahora son protegidos
         protected string procedencia = "";
@@ -15,11 +15,6 @@ namespace Books
             set {
                 procedencia = value;
             }
-        }
-
-        // Funcion ToString, devuelve un string con la informacion del articulo
-        public void ToString() {
-            Console.WriteLine(procedencia);
         }
    }
 }

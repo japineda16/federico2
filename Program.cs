@@ -46,35 +46,7 @@ namespace Books
                 l1[i].Autor = autor;
                 l1[i].Localizacion = ubicacion;
                 l1[i].Titulo = titulo;
-                l1[i].ToString();
-            }
-        }
-        // Definicion de funcion agregarDocumentos, el cual tiene como tarea agregar y enseñar hasta un maximo de 50 documentos
-        public static void agregarDocumentos() {
-            // se inicializa la clase y se le pasan los parametros de la clase Documento
-            Documento[] d1 = new Documento[50];
-            Console.WriteLine("Para detener la iteración, escriba 1 en todas las opciones");
-            // Iteracion para llenar arreglo de libros
-            for (int i = 0; i < 51; i++)
-            {
-                // Y se solicita los campos a conformar el arreglo de datos.
-                Console.WriteLine("Ingrese el titulo de la obra");
-                string titulo = Console.ReadLine();
-                Console.WriteLine("Ingrese la ubicación de la obra");
-                string ubicacion = Console.ReadLine();
-                Console.WriteLine("Ingrese el autor de la obra");
-                string autor = Console.ReadLine();
-                // Se valida el estado del formulario
-                // Es decir, si se cancela el formulario, o si se continua.
-                if (titulo == "1" || ubicacion == "1" || autor == "1") {
-                    break;
-                }
-                // Se definen las propiedades de la clase.
-                d1[i] = new Documento();
-                d1[i].Autor = autor;
-                d1[i].Localizacion = ubicacion;
-                d1[i].Titulo = titulo;
-                d1[i].Mostrar();
+                l1[i].ToStringLibro(autor, ubicacion, titulo);
             }
         }
         // Definicion de funcion agregarArticulos, el cual tiene como tarea agregar y enseñar hasta un maximo de 50 articulos
@@ -86,7 +58,7 @@ namespace Books
             for (int i = 0; i < 51; i++)
             {
                 // Y se solicita los campos a conformar el arreglo de datos.
-                Console.WriteLine("Ingrese el titulo de la obra");
+                Console.WriteLine("Ingrese el titulo del articulo");
                 string procedencia = Console.ReadLine();
                 // Se valida el estado del formulario
                 // Es decir, si se cancela el formulario, o si se continua.
@@ -96,7 +68,7 @@ namespace Books
                 // Se definen las propiedades de la clase.
                 a1[i] = new Articulo();
                 a1[i].Procedencia = procedencia;
-                a1[i].ToString();
+                a1[i].ToStringArticulo(procedencia);
             }
         }
    }
