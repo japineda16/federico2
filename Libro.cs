@@ -53,6 +53,14 @@ namespace Books
             Console.WriteLine("El autor es " + autor + ", lo escribió en " + localizacion + " y el titulo de la obra es " + titulo);
         }
 
+        public Boolean Contiene(string palabra) {
+            if (palabra == autor || palabra == titulo)
+            {
+                return true;
+            }
+            return false;
+        }
+
         // Migrada todas las instrucciones a la clase documento
         // Ahora la clase libro heredara todas las funcionalidades de la clase
         // documento

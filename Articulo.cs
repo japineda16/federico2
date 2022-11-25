@@ -16,5 +16,13 @@ namespace Books
                 procedencia = value;
             }
         }
+
+        public Boolean Contiene(string palabra) {
+            if (palabra == procedencia)
+            {
+                return true;
+            }
+            return false;
+        }
    }
 }
