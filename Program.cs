@@ -30,17 +30,22 @@ namespace Books
             for (int i = 0; i < 51; i++)
             {
                 // Y se solicita los campos a conformar el arreglo de datos.
-                Console.WriteLine("Ingrese el titulo de la obra");
+                Console.WriteLine("Ingrese el titulo de la obra, seleccione 1 para cancelar o 2 para buscar alguna palabra");
                 string titulo = Console.ReadLine();
+                // Se valida el estado del formulario
+                // Es decir, si se cancela el formulario, o si se continua.
+                if (titulo == "1") {
+                    break;
+                }
+                if (titulo == "2")
+                {
+                    BuscarLibros(l1);
+                    break;
+                }
                 Console.WriteLine("Ingrese la ubicación de la obra");
                 string ubicacion = Console.ReadLine();
                 Console.WriteLine("Ingrese el autor de la obra");
                 string autor = Console.ReadLine();
-                // Se valida el estado del formulario
-                // Es decir, si se cancela el formulario, o si se continua.
-                if (titulo == "1" || ubicacion == "1" || autor == "1") {
-                    break;
-                }
                 // Se definen las propiedades de la clase.
                 l1[i] = new Libros(autor, titulo, ubicacion);
                 l1[i].Autor = autor;
@@ -69,6 +74,26 @@ namespace Books
                 a1[i] = new Articulo();
                 a1[i].Procedencia = procedencia;
                 a1[i].ToStringArticulo(procedencia);
+            }
+        }
+
+        // Funcion para invocar la busqueda de strings
+        public static void BuscarLibros(Libros[] libro) {
+            Console.WriteLine("Por favor ingrese alguna palabra a buscar en el arreglo de datos.");
+            string? texto = Console.ReadLine();
+            int cuentas = 0;
+            for (var i = 0; i <= libro.Length; i++)
+            {
+                bool? encontrar = Libros.Contiene(texto);
+                if (encontrar == true) cuentas++;
+            }
+            if (cuentas > 0)
+            {
+                Console.WriteLine("Ha habido " + cuentas + " coincidencias.");
+            }
+            if (cuentas <= 0)
+            {
+                Console.WriteLine("No ha habido coincidencias");
             }
         }
    }

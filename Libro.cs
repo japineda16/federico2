@@ -6,10 +6,10 @@ namespace Books
 
         // Setteando parametros
         // Los campos ahora son protegidos
-        protected string autor = "";
-        protected string titulo = "";
-        protected string localizacion = "";
-        protected string paginas = "";
+        protected static string autor = "";
+        protected static string titulo = "";
+        protected static string localizacion = "";
+        protected static string paginas = "";
         // Definiendo parametros
         public string Autor
         {
@@ -53,12 +53,17 @@ namespace Books
             Console.WriteLine("El autor es " + autor + ", lo escribió en " + localizacion + " y el titulo de la obra es " + titulo);
         }
 
-        public Boolean Contiene(string palabra) {
+        public static bool Contiene(string palabra) {
+            // defino la variable data por defecto como false
+            bool data = false;
+            // Se pregunta si palabra es igual a autor o titulo, si se cumple alguna de las 2 condiciones
+            // la variable data cambia a true
             if (palabra == autor || palabra == titulo)
             {
-                return true;
+                data = true;
             }
-            return false;
+            // retornamos el valor de true
+            return data;
         }
 
         // Migrada todas las instrucciones a la clase documento
