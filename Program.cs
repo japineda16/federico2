@@ -79,14 +79,18 @@ namespace Books
 
         // Funcion para invocar la busqueda de strings
         public static void BuscarLibros(Libros[] libro) {
+            // Solicitamos la entrada de datos
             Console.WriteLine("Por favor ingrese alguna palabra a buscar en el arreglo de datos.");
             string? texto = Console.ReadLine();
+            // llevamos un contador de coincidencias
             int cuentas = 0;
+            // Hacemos un ciclo que compare la palabra a buscar con el array de datos.
             for (var i = 0; i <= libro.Length; i++)
             {
                 bool? encontrar = Libros.Contiene(texto);
                 if (encontrar == true) cuentas++;
             }
+            // desplegamos
             if (cuentas > 0)
             {
                 Console.WriteLine("Ha habido " + cuentas + " coincidencias.");
